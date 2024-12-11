@@ -12,17 +12,6 @@ html {
    font-weight: 500;
    color: white;
 }
-
-body#pessoa {
-   background: url(../_images/fundo_03.jpg) no-repeat top center fixed;
-   background-size: cover;
-}
-
-body#professor {
-   background: url(../_images/fundo_01.jpg) no-repeat top center fixed;
-   background-size: cover;
-}
-
 /*------------------------ Formatação MENU ------------------------*/
 
 ul.menu-list {
@@ -64,164 +53,6 @@ li.menu-item:hover {
 ul.dropdown-menu li {
    padding-left: 10px;
 }
-/*------------------------ Formatação Formulario ------------------------*/
-
-main.cadastro {
-   display: flex;
-   justify-content: center;
-   /* Centraliza horizontalmente */
-   align-items: center;
-   /* Centraliza verticalmente */
-   flex-direction: column;
-   /* Esse recurso é para empurrar o footer para o final da pagina, min-height = 100vh - (Soma de cada espaçamento vertical dos elemntos de footer) + 10*/
-}
-
-h1.cadastro-title {
-   text-transform: uppercase;
-   text-align: center;
-   width: 60%;
-   padding: 1% 2% 1% 2%;
-   font-size: 20px;
-   color: rgb(255, 255, 255);
-   border-radius: 15px 15px 0px 0px;
-   border: 2px rgba(15, 70, 87, 0.4) solid;
-   background-color: rgba(15, 70, 87, 0.7);
-}
-
-div#cadastro-interface {
-   width: 60%;
-   padding: 2%;
-   border: 2px rgba(45, 62, 81, 0.5) solid;
-   background-color: rgba(0, 0, 0, 0.7);
-   border-radius: 0px 0px 15px 15px;
-}
-
-fieldset.form-fieldset {
-   border-color: rgba(255, 255, 255, 0.8);
-   padding: 0 2% 3% 2%;
-   margin-bottom: 3%;
-}
-
-legend.form-legend {
-   font-size: 16px;
-   font-weight: bold;
-   padding: 0 1%;
-   margin-bottom: -3%;
-}
-
-legend.input-legend {
-   margin-top: 5%;
-   margin-bottom: 5px;
-   font-size: 14px;
-   font-weight: bold;
-}
-
-input.form-input {
-   color: #424b5a;
-   font-family: "Arial", sans-serif;
-   font-size: 15;
-   font-weight: bold;
-   padding: 5px;
-   width: 97%;
-}
-
-select.form-select {
-   color: #424b5a;
-   font-family: "Arial", sans-serif;
-   font-size: 15;
-   font-weight: bold;
-   padding: 5px;
-   width: 100%;
-}
-
-option {
-   color: #424b5a;
-   font-family: "Arial", sans-serif;
-}
-
-input.form-radio {
-   margin-right: 3%;
-   width: 18px;
-   height: 18px;
-   accent-color: rgba(15, 70, 87, 0.7);
-   vertical-align: middle;
-}
-
-footer#btn_cadastrar {
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   width: 100%;
-}
-
-footer.form {
-   margin-top: 2%;
-   width: 100%;
-   font-size: 20px;
-   text-align: center;
-   padding: 2vh 0;
-   color: #f8f9fa;
-   background-color: rgba(0, 0, 0, 0.5);
-}
-
-footer.form > a {
-   text-decoration: none;
-   color: white;
-   margin: 0 1%;
-   padding: 5px;
-   border-radius: 5px;
-}
-
-footer.form > a:hover {
-   color: #424b5a;
-   background-color: #f8f9fa;
-   transition: 0.2s;
-}
-
-button#btn_cadastrar {
-   border-radius: 10px;
-   padding: 1% 3% 1% 3%;
-   color: white;
-   font-size: 18px;
-   font-weight: bold;
-   background-color: rgba(15, 70, 87, 0.7);
-   border-style: none;
-   text-decoration: none;
-}
-
-button#btn_cadastrar:hover {
-   color: rgba(15, 70, 87, 0.7);
-   background-color: rgba(255, 255, 255, 0.8);
-   transition-duration: 0.4s;
-   cursor: pointer;
-}
-
-div.div-name {
-   padding: 0 2%;
-}
-
-section.setion-1-identification {
-   display: flex;
-   justify-content: left;
-   flex-direction: row;
-}
-
-div.div-identification {
-   width: 50%;
-   padding: 0 2%;
-}
-
-section.setion-1-address {
-   display: flex;
-   justify-content: left;
-   flex-direction: row;
-}
-
-div.div-address {
-   width: 50%;
-   padding: 0 2%;
-}
-
 /*------------------------ Formatação Rpdapé ------------------------*/
 
 footer.assinatura {
@@ -235,7 +66,7 @@ footer.assinatura {
 
 a.links {
    text-decoration: none;
-   color: red;
+   color: rgb(45, 62, 81);
    margin: 0 1%;
    margin-top: 50px;
 }
@@ -290,16 +121,28 @@ h1.titulo-h1 {
    color: rgb(45, 62, 81);
 }
 
+h2.titulo-h2 {
+   font-family: "Arial", sans-serif;
+   color: rgb(45, 62, 81);
+}
+
 p.paragrafo {
    font-family: "Arial", sans-serif;
    color: rgb(45, 62, 81);
    font-size: 20px;
 }
 
+b.paragrafo {
+   font-family: "Arial", sans-serif;
+   color: rgb(45, 62, 81);
+   font-size: 20px;
+}
+
 main#main-sobre {
+   text-align: center;
+   margin: 0 15%;
    text-align: left;
-   margin: 0 20%;
-   width: 60%;
+   width: 70%;
    padding-top: 5%;
    min-height: 77vh;
 }
@@ -313,30 +156,18 @@ div.div-video {
 
 iframe.iframe-video {
    /* 16:9  Multiplica o width por 16 e o height por 9 para manter a proporção do video */
-   width: 800px;
-   height: 450px;
+   width: 100%;
+   height: 56vh;
+}
+
+legend.legenda-video {
+   font-size: 20px;
 }
 
 div.div-graphic {
    width: 100%;
-   margin: 5% 0;
-
    display: flex;
    align-items: center;
    justify-content: center;
-   flex-direction: row;
-}
-
-div.div-canvas {
-   width: 70%;
-   padding: 0 2%;
-}
-
-div.text-graphic {
-   width: 30%;
-   text-align: justify;
-   padding-right: 3%;
-   font-family: "Arial", sans-serif;
-   font-size: 20px;
-   color: rgb(45, 62, 81);
+   flex-direction: column;
 }
