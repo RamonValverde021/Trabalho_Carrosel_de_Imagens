@@ -74,6 +74,17 @@ a.nav-link:hover {
    transition: 0.2s;
 }
 
+a.nav-link-dropdown {
+   font-size: 25px;
+   color: rgb(45, 62, 81);
+   text-decoration: none;
+}
+
+a.nav-link-dropdown:hover {
+   color: #198754;
+   transition: 0.2s;
+}
+
 button.nav-link {
    color: rgba(15, 70, 87, 0.7);
 }

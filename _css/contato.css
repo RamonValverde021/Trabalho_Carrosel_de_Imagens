@@ -14,150 +14,169 @@ html {
 }
 
 main.cadastro {
-    display: flex;
-    justify-content: center;
-    /* Centraliza horizontalmente */
-    align-items: center;
-    /* Centraliza verticalmente */
-    flex-direction: column;
-    /* Esse recurso é para empurrar o footer para o final da pagina, min-height = 100vh - (Soma de cada espaçamento vertical dos elemntos de footer) + 10*/
- }
- 
- h1.cadastro-title {
-    text-transform: uppercase;
-    text-align: center;
-    width: 60%;
-    font-size: 20px;
-    color:  rgb(15, 70, 87);
- }
- 
- div#cadastro-interface {
-    width: 60%;
-    padding: 2%;
- }
- 
- fieldset.form-fieldset {
-    border-color: rgba(255, 255, 255, 0.8);
-    padding: 0 2% 3% 2%;
-    margin-bottom: 3%;
- }
- 
- legend.form-legend {
-    font-size: 16px;
-    font-weight: bold;
-    padding: 0 1%;
-    margin-bottom: -3%;
- }
- 
- legend.input-legend {
-    margin-top: 5%;
-    margin-bottom: 5px;
-    font-size: 14px;
-    font-weight: bold;
- }
- 
- input.form-input {
-    color: #424b5a;
-    font-family: "Arial", sans-serif;
-    font-size: 15;
-    font-weight: bold;
-    padding: 5px;
-    width: 97%;
- }
- 
- select.form-select {
-    color: #424b5a;
-    font-family: "Arial", sans-serif;
-    font-size: 15;
-    font-weight: bold;
-    padding: 5px;
-    width: 100%;
- }
- 
- option {
-    color: #424b5a;
-    font-family: "Arial", sans-serif;
- }
- 
- input.form-radio {
-    margin-right: 3%;
-    width: 18px;
-    height: 18px;
-    accent-color: rgba(15, 70, 87, 0.7);
-    vertical-align: middle;
- }
- 
- footer#btn_cadastrar {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
- }
- 
- footer.form {
-    margin-top: 2%;
-    width: 100%;
-    font-size: 20px;
-    text-align: center;
-    padding: 2vh 0;
-    color: #f8f9fa;
-    background-color: rgba(0, 0, 0, 0.5);
- }
- 
- footer.form > a {
-    text-decoration: none;
-    color: white;
-    margin: 0 1%;
-    padding: 5px;
-    border-radius: 5px;
- }
- 
- footer.form > a:hover {
-    color: #424b5a;
-    background-color: #f8f9fa;
-    transition: 0.2s;
- }
- 
- button#btn_cadastrar {
-    border-radius: 10px;
-    padding: 1% 3% 1% 3%;
-    color: white;
-    font-size: 18px;
-    font-weight: bold;
-    background-color: rgba(15, 70, 87, 0.7);
-    border-style: none;
-    text-decoration: none;
- }
- 
- button#btn_cadastrar:hover {
-    color: rgba(15, 70, 87, 0.7);
-    background-color: rgba(255, 255, 255, 0.8);
-    transition-duration: 0.4s;
-    cursor: pointer;
- }
- 
- div.div-name {
-    padding: 0 2%;
- }
- 
- section.setion-1-identification {
-    display: flex;
-    justify-content: left;
-    flex-direction: row;
- }
- 
- div.div-identification {
-    width: 50%;
-    padding: 0 2%;
- }
- 
- section.setion-1-address {
-    display: flex;
-    justify-content: left;
-    flex-direction: row;
- }
- 
- div.div-address {
-    width: 50%;
-    padding: 0 2%;
- }
+   display: flex;
+   justify-content: center;
+   /* Centraliza horizontalmente */
+   align-items: center;
+   /* Centraliza verticalmente */
+   flex-direction: column;
+   /* Esse recurso é para empurrar o footer para o final da pagina, min-height = 100vh - (Soma de cada espaçamento vertical dos elemntos de footer) + 10*/
+}
+
+h1.cadastro-title {
+   font-family: "Arial", sans-serif;
+   color: rgb(45, 62, 81);
+   font-size: 30px;
+   margin-top: 30px;
+   margin-bottom: -10px;
+   font-weight: bold;
+   text-transform: uppercase;
+   width: 60%;
+   text-align: center;
+}
+
+div#cadastro-interface {
+   width: 60%;
+}
+
+fieldset.form-fieldset {
+
+}
+
+legend.form-legend {
+   padding: 10px 0;
+   margin-top: 40px;
+   margin-bottom: -30px;
+   font-size: 24px;
+   font-weight: bold;
+   color: rgb(45, 62, 81);
+}
+
+input.form-input {
+   font-size: 15px;
+   font-family: "Arial", sans-serif;
+   font-weight: 600;
+   color: rgb(45, 62, 81);
+   border: 1px rgb(45, 62, 81) solid;
+   border-radius: 8px;
+   padding: 5px;
+   width: 100%;
+}
+
+select.form-select {
+   border: 1px rgb(45, 62, 81) solid;
+   border-radius: 8px;
+   padding: 5px;
+   width: 100%;
+   font-size: 15px;
+   font-family: "Arial", sans-serif;
+   font-weight: 600;
+   color: rgb(45, 62, 81);
+}
+
+option {
+   color: rgb(45, 62, 81);
+   font-size: 15px;
+   font-family: "Arial", sans-serif;
+   font-weight: 500;
+}
+
+label.input-legend {
+   margin-top: 5%;
+   margin-bottom: 5px;
+   font-size: 20px;
+   font-weight: bold;
+   color: rgb(45, 62, 81);
+}
+
+
+label.label-sexo {
+   margin-bottom: 5px;
+   font-size: 20px;
+   font-weight: bold;
+   color: rgb(45, 62, 81);
+}
+
+input.form-radio {
+   margin-right: 3%;
+   width: 18px;
+   height: 18px;
+   accent-color: rgb(45, 62, 81);
+}
+
+footer#btn_cadastrar {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 100%;
+}
+
+footer.form {
+   margin-top: 2%;
+   width: 100%;
+   font-size: 20px;
+   text-align: center;
+   padding: 2vh 0;
+   color: #f8f9fa;
+   background-color: rgba(0, 0, 0, 0.5);
+}
+
+footer.form>a {
+   text-decoration: none;
+   color: white;
+   margin: 0 1%;
+   padding: 5px;
+   border-radius: 5px;
+}
+
+footer.form>a:hover {
+   color: rgb(45, 62, 81);
+   background-color: #f8f9fa;
+   transition: 0.2s;
+}
+
+button#btn_cadastrar {
+   border: 2px rgb(255, 255, 255) solid;
+   border-radius: 10px;
+   margin: 50px 0 20px 0;
+   padding: 1% 3% 1% 3%;
+   color: white;
+   font-size: 18px;
+   font-weight: bold;
+   background-color: rgb(45, 62, 81);
+   text-decoration: none;
+}
+
+button#btn_cadastrar:hover {
+   border: 2px rgb(45, 62, 81) solid;
+   color: rgb(45, 62, 81);
+   background-color: rgba(255, 255, 255, 0.8);
+   transition-duration: 0.4s;
+   cursor: pointer;
+}
+
+div.div-name {
+   padding: 0 2%;
+}
+
+section.setion-1-identification {
+   display: flex;
+   justify-content: left;
+   flex-direction: row;
+}
+
+div.div-identification {
+   width: 50%;
+   padding: 0 2%;
+}
+
+section.setion-1-address {
+   display: flex;
+   justify-content: left;
+   flex-direction: row;
+}
+
+div.div-address {
+   width: 50%;
+   padding: 0 2%;
+}
