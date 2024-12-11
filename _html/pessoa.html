@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+   <meta name="author" content="Ramon Valverde" />
+   <meta charset="UTF-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1" />
+   <title>Cadastre-se</title>
+   <link rel="icon" href="../_images/Icone_Planta_03.png">
+   <link rel="stylesheet" type="text/css" href="../_css/estilos.css" />
+</head>
+
+<body id="pessoa">
+
+   <nav id="menu">
+      <ul class="menu-list">
+         <a href="../index.html" class="menu-link">
+            <li class="menu-item">Home</li>
+         </a>
+      </ul>
+   </nav>
+
+   <main class="cadastro">
+      <h1 class="cadastro-title">
+         Preencha com suas informações pessoais
+      </h1>
+      <div id="cadastro-interface">
+         <form name="formulario_alunos" method="post" onsubmit="envia_formulario(event);" action=" ">
+            <fieldset id="fieldset-identificacao" class="form-fieldset">
+               <legend class="form-legend">Identificação</legend>
+
+               <div class="div-name">
+                  <legend class="input-legend">Nome</legend>
+                  <input id="nome" class="form-input" type="text" placeholder="Nome completo" />
+               </div>
+
+               <section class="setion-1-identification">
+                  <div class="div-identification">
+                     <legend class="input-legend">CPF</legend>
+                     <input id="cpf" type="text" class="form-input" placeholder="000.000.000-00"
+                        oninput="autoincremento(this, 'CPF')" />
+
+                     <legend class="input-legend">Data de Nascimento</legend>
+                     <input id="nascimento" class="form-input" type="date" placeholder="__/__/____" />
+
+                     <legend class="input-legend">Sexo</legend>
+                     <input id="sex_masc" class="form-radio" type="radio" name="sexo" /><label
+                        for="sex_masc">Mascolino</label>&nbsp;&nbsp;&nbsp;&nbsp;
+                     <input id="sex_fem" class="form-radio" type="radio" name="sexo" /><label
+                        for="sex_fem">Feminino</label>
+                  </div>
+
+                  <div class="div-identification">
+                     <legend class="input-legend">Estado Civil</legend>
+                     <select name="estado_civil" id="estado_civil" class="form-select">
+                        <option value="solt" selected>Solteiro(a)</option>
+                        <option value="casad">Casado(a)</option>
+                        <option value="divor">Divorciado(a)</option>
+                     </select>
+
+                     <legend class="input-legend">Celular</legend>
+                     <input id="celular" class="form-input" type="tel" placeholder="(00) 0 0000 - 0000"
+                        oninput="autoincremento(this, 'CEL')" />
+
+                     <legend class="input-legend">E-mail</legend>
+                     <input id="email" class="form-input" type="email" placeholder="seu.email@mail.com" />
+                  </div>
+               </section>
+            </fieldset>
+
+            <fieldset id="fieldset-endereco" class="form-fieldset">
+               <legend class="form-legend">Endereço</legend>
+
+               <div class="div-name">
+                  <legend class="input-legend">Logradouro</legend>
+                  <input id="logradouro" class="form-input" type="text" placeholder="Rua, Avenida, Travessa..." />
+               </div>
+
+               <section class="setion-1-address">
+                  <div class="div-address">
+                     <legend class="input-legend">CEP</legend>
+                     <input id="cep" class="form-input" type="text" placeholder="00000-000"
+                        oninput="autoincremento(this, 'CEP')" />
+
+                     <legend class="input-legend">Número</legend>
+                     <input id="numero" class="form-input" type="number" placeholder="Número da residência" />
+
+                     <legend class="input-legend">Complemento</legend>
+                     <input id="complemento" class="form-input" type="text"
+                        placeholder="Casa, Apartamento, próximo há..." />
+                  </div>
+
+                  <div class="div-address">
+                     <legend class="input-legend">Estado</legend>
+                     <select name="estados" id="estados" class="form-select">
+                        <optgroup label="Região Sudeste">
+                           <option value="MG" selected>Minas Gerais</option>
+                           <!-- "selected" deixa a opçaõ de minas gerais maracada automaticamente-->
+                           <option value="SP">São Paulo</option>
+                           <option value="RJ">Rio de Janeiro</option>
+                           <option value="ES">Espírito Santo</option>
+                        </optgroup>
+
+                        <optgroup label="Região Sul">
+                           <option value="PR">Paraná</option>
+                           <option value="SC">Santa Catarina</option>
+                           <option value="RS">Rio Grande do Sul</option>
+                        </optgroup>
+
+                        <optgroup label="Região Centro-Oeste">
+                           <option value="DF">Distrito Federal</option>
+                           <option value="MT">Mato Grosso</option>
+                           <option value="GO">Goiás</option>
+                           <option value="MS">Mato Grosso do Sul</option>
+                        </optgroup>
+
+                        <optgroup label="Região Norte">
+                           <option value="AM">Amazonas</option>
+                           <option value="AC">Acre</option>
+                           <option value="RR">Rorâima</option>
+                           <option value="AP">Amapá</option>
+                           <option value="PA">Pará</option>
+                           <option value="RO">Rondônia</option>
+                           <option value="TO">Tocantins</option>
+                        </optgroup>
+
+                        <optgroup label="Região Nordeste">
+                           <option value="CE">Ceará</option>
+                           <option value="AL">Alagoas</option>
+                           <option value="BA">Bahia</option>
+                           <option value="MA">Maranhão</option>
+                           <option value="PB">Paraíba</option>
+                           <option value="PE">Pernambuco</option>
+                           <option value="PI">Piauí</option>
+                           <option value="RN">Rio Grande do Norte</option>
+                           <option value="SE">Sergipe</option>
+                        </optgroup>
+                     </select>
+
+                     <legend class="input-legend">Cidade</legend>
+                     <input id="cidade" class="form-input" type="text" placeholder="Cidade" />
+                     <legend class="input-legend">Bairro</legend>
+                     <input id="bairro" class="form-input" type="text" placeholder="Bairro" />
+                  </div>
+               </section>
+            </fieldset>
+
+            <footer id="btn_cadastrar">
+               <button href="obrigado.html" id="btn_cadastrar">Cadastrar</button>
+            </footer>
+
+         </form>
+      </div>
+   </main>
+   <footer class="form">
+      <em>Copyright © 2024 by Ramon Aguiar Valverde</em><br><br>
+      <a href="https://www.facebook.com/" target="_blank">Facebook</a>
+      <a href="https://www.instagram.com/" target="_blank">Instagram</a><br>
+   </footer>
+   <script language="JavaScript" src="../_javascript/validacao_aluno.js"></script>
+</body>
+</html>
