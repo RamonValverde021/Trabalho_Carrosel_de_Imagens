@@ -31,12 +31,12 @@ h1.cadastro-title {
    margin-bottom: -10px;
    font-weight: bold;
    text-transform: uppercase;
-   width: 60%;
+   width: 100%;
    text-align: center;
 }
 
 div#cadastro-interface {
-   width: 60%;
+   width: 70%;
 }
 
 fieldset.form-fieldset {
