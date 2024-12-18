@@ -148,6 +148,7 @@ main#main-sobre {
    width: 70%;
    padding-top: 2%;
    min-height: 77vh;
+   animation: slideIn 1s ease-out forwards;
 }
 
 div.div-video {
@@ -189,4 +190,18 @@ div.div-graphic {
       height: 20vh;
    }
 
+}
+
+/* ------------------------- Definição da animação ------------------------- */
+
+@keyframes slideIn {
+   from {
+       transform: translateX(-400px);
+       /* Fora da tela à esquerda */
+   }
+
+   to {
+       transform: translateX(0);
+       /* Posição final */
+   }
 }
