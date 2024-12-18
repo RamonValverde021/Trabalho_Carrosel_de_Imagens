@@ -216,3 +216,21 @@ div.carousel-caption>p {
       /* Posição final */
   }
 }
+
+
+@media(max-width: 550px) {
+   img {
+      animation: slideInIMG 1s ease-out forwards;
+   }
+   
+   span#logomarca {
+
+      animation: slideIn 1s ease-out forwards;
+   }
+   
+   div#navbarSupportedContent {
+      animation: slideInMenu 1s ease-out forwards;
+   }
+   
+}
+

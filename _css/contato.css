@@ -37,10 +37,12 @@ h1.cadastro-title {
 
 div#cadastro-interface {
    width: 60%;
+   animation: slideIn 1s ease-out forwards;
 }
 
 div#contato-interface {
    width: 40%;
+   animation: slideIn 1s ease-out forwards;
 }
 
 legend.form-legend {
@@ -200,5 +202,28 @@ div.espaco {
    div.espaco {
       height: 20vh;
    }
+
+   button#btn_cadastrar {
+      border: 2px rgb(255, 255, 255) solid;
+      border-radius: 10px;
+      padding: 2% 6%;
+      font-size: 25px;
+      font-weight: bold;
+   }
    
+}
+
+
+/* ------------------------- Definição da animação ------------------------- */
+
+@keyframes slideIn {
+    from {
+        transform: translateX(-400px);
+        /* Fora da tela à esquerda */
+    }
+
+    to {
+        transform: translateX(0);
+        /* Posição final */
+    }
 }
