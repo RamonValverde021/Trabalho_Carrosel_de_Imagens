@@ -1,9 +1,15 @@
 @charset "UTF-8";
 
+nav.navbar {
+   box-shadow: 0px 0px 6px 2px  #286145;
+   z-index: 5;
+}
+
 img {
    margin: 5px;
    height: 80px;
    width: auto;
+   animation: slideInIMG 1s ease-out forwards;
 }
 
 span#logomarca {
@@ -12,6 +18,11 @@ span#logomarca {
    font-size: 30px;
    color: rgb(45, 62, 81);
    margin-left: 10px;
+   animation: slideIn 1.2s ease-out forwards;
+}
+
+div#navbarSupportedContent {
+   animation: slideInMenu 1.3s ease-out forwards;
 }
 
 form.form-inline {
@@ -113,7 +124,9 @@ span.carousel-control-next-icon:hover {
    background-color: rgba(15, 70, 87, 0.5);
 }
 
-
+div.carousel-inner {
+   z-index: -1;
+}
 
 div#slide_01 {
    background: url(../_images/slide_06.jpg) no-repeat top center fixed;
@@ -164,3 +177,42 @@ div.carousel-caption>p {
    text-shadow: 3px 3px 2px #2F4F4F;
 }
 
+
+
+/* ------------------------- Definição da animação ------------------------- */
+
+@keyframes slideInIMG {
+   from {
+       transform: translateX(-100px);
+       /* Fora da tela à esquerda */
+   }
+
+   to {
+       transform: translateX(0);
+       /* Posição final */
+   }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(-400px);
+        /* Fora da tela à esquerda */
+    }
+
+    to {
+        transform: translateX(0);
+        /* Posição final */
+    }
+}
+
+@keyframes slideInMenu {
+   from {
+      transform: translateX(-600px);
+      /* Fora da tela à esquerda */
+  }
+
+  to {
+      transform: translateX(0);
+      /* Posição final */
+  }
+}

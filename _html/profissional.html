@@ -35,8 +35,8 @@
                      Contato
                   </a>
                   <ul class="dropdown-menu">
+                     <li><a class="nav-link-dropdown" href="contato.html">Contato</a></li>
                      <li><a class="nav-link-dropdown" href="pessoa.html">Cadastre-se</a></li>
-                     <li><a class="nav-link-dropdown" href="profissional.html">Trabalhe Conosco</a></li>
                   </ul>
                </li>
                <li class="nav-item active">
@@ -184,18 +184,22 @@
             </fieldset>
             <fieldset id="competencias" class="form-fieldset">
                <legend class="form-legend">Competências</legend>
+               <div class="div-name">
+                  <label class="input-legend">Formação</label>
+                  <input id="formacao" class="form-input" type="text" placeholder="Formação" />
+                  <label class="input-legend">Titulação</label>
+                  <select name="titulacao" id="titulacao" class="form-select">
+                     <option value="grad" selected>Graduado(a)</option>
+                     <option value="pgrad">Pós-Graduado(a)</option>
+                     <option value="mstr">Mestrado(a)</option>
+                     <option value="doc">Doutorado(a)</option>
+                     <option value="pdoc">Pós-Doutorado(a)</option>
+                  </select>
+                  <label class="input-legend">Informações Adicionais</label>
+                  <textarea class="form-textarea" id="texto_contato" rows="6" placeholder="Escreva aqui informações que deseja agregar"></textarea>
+               </div>
 
-               <label class="input-legend">Formação</label>
-               <input id="formacao" class="form-input" type="text" placeholder="Formação" />
 
-               <label class="input-legend">Titulação</label>
-               <select name="titulacao" id="titulacao" class="form-select">
-                  <option value="grad" selected>Graduado(a)</option>
-                  <option value="pgrad">Pós-Graduado(a)</option>
-                  <option value="mstr">Mestrado(a)</option>
-                  <option value="doc">Doutorado(a)</option>
-                  <option value="pdoc">Pós-Doutorado(a)</option>
-               </select>
             </fieldset>
 
             <footer id="btn_cadastrar">

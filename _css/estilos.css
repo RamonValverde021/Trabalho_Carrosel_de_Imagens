@@ -53,6 +53,7 @@ li.menu-item:hover {
 ul.dropdown-menu li {
    padding-left: 10px;
 }
+
 /*------------------------ Formatação Rpdapé ------------------------*/
 
 footer.assinatura {
@@ -62,6 +63,8 @@ footer.assinatura {
    padding: 2vh 0;
    color: rgb(45, 62, 81);
    background-color: #f8f9fa;
+   box-shadow: 0px 0px 5px 2px #286145;
+   z-index: 5;
 }
 
 a.links {
@@ -143,7 +146,7 @@ main#main-sobre {
    margin: 0 15%;
    text-align: left;
    width: 70%;
-   padding-top: 5%;
+   padding-top: 2%;
    min-height: 77vh;
 }
 
@@ -156,8 +159,8 @@ div.div-video {
 
 iframe.iframe-video {
    /* 16:9  Multiplica o width por 16 e o height por 9 para manter a proporção do video */
+   height: 60vh;
    width: 100%;
-   height: 56vh;
 }
 
 legend.legenda-video {
@@ -170,4 +173,20 @@ div.div-graphic {
    align-items: center;
    justify-content: center;
    flex-direction: column;
+}
+
+/* --------------------------- CORREÇÃO DE RESPONSIVIDADE --------------------------- */
+
+@media(max-width: 550px) {
+
+   main#main-sobre {
+      padding-top: 5%;
+      width: 80%;
+      margin: 0 10%;
+   }
+
+   iframe.iframe-video {
+      height: 20vh;
+   }
+
 }
