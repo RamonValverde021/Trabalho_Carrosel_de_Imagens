@@ -14,8 +14,19 @@ function alterarFonte() {
         // Ajusta o tamanho com base na variável "aumentar"
         if (aumentar) {
             elemento.style.fontSize = (fontSize + 10) + 'px';
+
+            const radios = document.querySelectorAll('input[name="sexo"]');
+            radios.forEach(radio => {
+                radio.style = "height: 28px; width: 28px";
+            });
+
         } else {
             elemento.style.fontSize = (fontSize - 10) + 'px';
+
+            const radios = document.querySelectorAll('input[name="sexo"]');
+            radios.forEach(radio => {
+                radio.style = "height: 20px; width: 20px";
+            });
         }
     });
 

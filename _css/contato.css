@@ -35,6 +35,10 @@ h1.cadastro-title {
    text-align: center;
 }
 
+fieldset#fieldset-contato {
+   margin-top: 15px;
+}
+
 div#cadastro-interface {
    width: 60%;
    animation: slideIn 1s ease-out forwards;
@@ -98,8 +102,8 @@ label.label-sexo {
 
 input.form-radio {
    margin-right: 3%;
-   width: 18px;
-   height: 18px;
+   height: 20px;
+   width: 20px;
    accent-color: #198754;
 }
 
@@ -136,11 +140,11 @@ footer.form>a:hover {
 
 button#btn_cadastrar {
    border: 2px rgb(255, 255, 255) solid;
-   border-radius: 10px;
+   border-radius: 15px;
    margin: 30px 0 30px 0;
-   padding: 1% 3% 1% 3%;
+   padding: 1% 3%;
    color: white;
-   font-size: 18px;
+   font-size: 22px;
    font-weight: bold;
    background-color: rgb(45, 62, 81);
    text-decoration: none;
@@ -201,14 +205,6 @@ div.espaco {
 
    div.espaco {
       height: 20vh;
-   }
-
-   button#btn_cadastrar {
-      border: 2px rgb(255, 255, 255) solid;
-      border-radius: 10px;
-      padding: 2% 6%;
-      font-size: 25px;
-      font-weight: bold;
    }
    
 }
