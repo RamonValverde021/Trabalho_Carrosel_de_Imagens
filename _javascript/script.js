@@ -25,7 +25,7 @@ function alterarFonte() {
 
             const radios = document.querySelectorAll('input[name="sexo"]');
             radios.forEach(radio => {
-                radio.style = "height: 20px; width: 20px";
+                radio.style = "height: 18px; width: 18px";
             });
         }
     });
