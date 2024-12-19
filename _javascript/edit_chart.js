@@ -1,5 +1,5 @@
-//Chart.defaults.color = '#F8F8FF'; // Legendas, letras e numeros
-//Chart.defaults.borderColor = '#F8F8FF'; // Linhas de Grade
+//Chart.defaults.color = 'blue'; // Legendas, letras e numeros
+//Chart.defaults.borderColor = 'red'; // Linhas de Grade
 Chart.defaults.font.size = 15;
 
 // Grafico de Linha
